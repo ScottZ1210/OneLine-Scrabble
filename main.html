@@ -1,0 +1,58 @@
+<!-- File: main.html
+GUI Assignment: Multiplcation Table
+This project was to use what we learned all semester to create a Oneline scrabble game using javascript, html, css and jQuery.
+Its a similiar game to scrabble to works similiar just a more similiar verision since it is only one line instead of a whole board 
+Scott Zalomis, Umass Lowell Computer Science, scott_zalomis@cs.uml.edu
+Copyright (c) 2025 by Scott. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SZ on December 14, 2025 at 5:00PM  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>One-Line Scrabble</title>
+  <link rel="stylesheet" href="main.css"/>
+  <!-- jQuery + jQuery UI for drag/drop -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+</head>
+<body>
+  <div class="game-shell">
+    <div class="header">
+      <h1>One-Line Scrabble</h1>
+      <div class="score-panel">
+        Score: <span id="score">0</span>
+      </div>
+    </div>
+
+    <div class="board-area">
+      <div class="board-wrapper">
+        <img
+          src="graphics_data/Scrabble_Board_OneLine.png"
+          alt="One Line Scrabble Board"
+          class="board-image"
+        />
+        <div class="tile-row" id="boardRow"></div>
+      </div>
+
+      <div class="rack-area">
+        <div class="rack-holder">
+          <img src="graphics_data/scrabble-tile-holder-406774_640.png" alt="Tile Holder" class="rack-image">
+          <div class="rack" id="rack"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="shuffleBtn">Shuffle</button>
+      <button id="submitBtn">Submit Word</button>
+      <button id="resetBtn">Reset</button>
+      <button id="redrawBtn">Redraw</button>
+    </div>
+  </div>
+
+<script src="graphics_data/Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
